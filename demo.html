@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="CSS,CSS3,CSS图标,CSS3图形,CSS3图标" name="Keywords">
+    <meta content="使用CSS实现各类简单图形" name="description">
+    <title>CSS 图形</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+<h1 style="height: 0;overflow: hidden;">CSS奇思妙想，使用CSS实现各类简单图形</h1>
+<a style="width:149px;height:149px;position:fixed;top:0;right:0;z-index:9999;" href="https://github.com/merrier/css-shapes" target="_blank">
+    <img src="http://chokcoco.github.io/demo/curveJS/images/forkme.png">
+</a>
+<div class="container">
+    <section id="oval" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>椭圆</summary>
+            <hgroup class="oval"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .oval {
+                width: 100px;
+                height: 50px;
+                background: red;
+                border-radius: 50px / 25px;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-up" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>向上实心三角</summary>
+            <hgroup class="triangle-up"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-up {
+                width: 0;
+                height: 0;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                border-bottom: 50px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-down" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>向下实心三角</summary>
+            <hgroup class="triangle-down"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-down {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-left" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>向左实心三角</summary>
+            <hgroup class="triangle-left"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-left {
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-right: 100px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-right" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>向右实心三角</summary>
+            <hgroup class="triangle-right"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-right {
+                width: 0;
+                height: 0;
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 100px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-topleft" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>左上实心三角</summary>
+            <hgroup class="triangle-topleft"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-topleft {
+                width: 0;
+                height: 0;
+                border-right: 100px solid transparent;
+                border-top: 100px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-topright" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>右上实心三角</summary>
+            <hgroup class="triangle-topright"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-topright {
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-top: 100px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-bottomleft" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>左下实心三角</summary>
+            <hgroup class="triangle-bottomleft"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-bottomleft {
+                width: 0;
+                height: 0;
+                border-right: 100px solid transparent;
+                border-bottom: 100px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="triangle-bottomright" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>右下实心三角</summary>
+            <hgroup class="triangle-bottomright"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .triangle-bottomright {
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-bottom: 100px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="curvedarrow" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>曲向箭头</summary>
+            <hgroup class="curvedarrow"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .curvedarrow {
+                position: relative;
+                width: 0;
+                height: 0;
+                border-top: 9px solid transparent;
+                border-right: 9px solid red;
+                transform: rotate(10deg);
+            }
+            .curvedarrow:after {
+                content: "";
+                position: absolute;
+                border: 0 solid transparent;
+                border-top: 3px solid red;
+                border-radius: 20px 0 0 0;
+                top: -12px;
+                left: -9px;
+                width: 12px;
+                height: 12px;
+                transform: rotate(45deg);
+            }
+        </style>
+    </section>
+
+    <section id="trapezoid" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>梯形</summary>
+            <hgroup class="trapezoid"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .trapezoid {
+                border-bottom: 100px solid red;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                height: 0;
+                width: 100px;
+            }
+        </style>
+    </section>
+
+    <section id="parallelogram" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>平行四边形</summary>
+            <hgroup class="parallelogram"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .parallelogram {
+                width: 150px;
+                height: 100px;
+                transform: skew(20deg);
+                background: red;
+            }
+        </style>
+    </section>
+
+    <section id="star-six" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>六角星</summary>
+            <hgroup class="star-six"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .star-six {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 100px solid red;
+                position: relative;
+            }
+            .star-six:after {
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 100px solid red;
+                position: absolute;
+                content: "";
+                top: 30px;
+                left: -50px;
+            }
+        </style>
+    </section>
+
+    <section id="star-five" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>五角星</summary>
+            <hgroup class="star-five"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .star-five {
+                margin: 50px 0;
+                position: relative;
+                display: block;
+                color: red;
+                width: 0px;
+                height: 0px;
+                border-right: 100px solid transparent;
+                border-bottom: 70px solid red;
+                border-left: 100px solid transparent;
+                transform: rotate(35deg);
+            }
+            .star-five:before {
+                border-bottom: 80px solid red;
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -45px;
+                left: -65px;
+                display: block;
+                content: '';
+                transform: rotate(-35deg);
+            }
+            .star-six:after {
+                position: absolute;
+                display: block;
+                color: red;
+                top: 3px;
+                left: -105px;
+                width: 0px;
+                height: 0px;
+                border-right: 100px solid transparent;
+                border-bottom: 70px solid red;
+                border-left: 100px solid transparent;
+                transform: rotate(-70deg);
+                content: '';
+            }
+        </style>
+    </section>
+
+    <section id="pentagon" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>五边形</summary>
+            <hgroup class="pentagon"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .pentagon {
+                position: relative;
+                width: 54px;
+                box-sizing: content-box;
+                border-width: 50px 18px 0;
+                border-style: solid;
+                border-color: red transparent;
+            }
+            .pentagon:before {
+                content: "";
+                position: absolute;
+                height: 0;
+                width: 0;
+                top: -85px;
+                left: -18px;
+                border-width: 0 45px 35px;
+                border-style: solid;
+                border-color: transparent transparent red;
+            }
+        </style>
+    </section>
+
+    <section id="hexagon" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>六边形</summary>
+            <hgroup class="hexagon"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .hexagon {
+                width: 100px;
+                height: 55px;
+                background: red;
+                position: relative;
+            }
+            .hexagon:before {
+                content: "";
+                position: absolute;
+                top: -25px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-bottom: 25px solid red;
+            }
+            .hexagon:after {
+                content: "";
+                position: absolute;
+                bottom: -25px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                border-top: 25px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="octagon" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>八边形</summary>
+            <hgroup class="octagon"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .octagon {
+                width: 100px;
+                height: 100px;
+                background: red;
+                position: relative;
+            }
+            .octagon:before {
+                content: "";
+                width: 100px;
+                height: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-bottom: 29px solid red;
+                border-left: 29px solid #eee;
+                border-right: 29px solid #eee;
+            }
+            .octagon:after {
+                content: "";
+                width: 100px;
+                height: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-top: 29px solid red;
+                border-left: 29px solid #eee;
+                border-right: 29px solid #eee;
+            }
+        </style>
+    </section>
+
+    <section id="burst-8" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>八角形</summary>
+            <hgroup class="burst-8"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .burst-8 {
+                background: red;
+                width: 80px;
+                height: 80px;
+                position: relative;
+                text-align: center;
+                transform: rotate(20deg);
+            }
+            .burst-8:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 80px;
+                width: 80px;
+                background: red;
+                transform: rotate(135deg);
+            }
+        </style>
+    </section>
+
+    <section id="burst-12" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>十二角形</summary>
+            <hgroup class="burst-12"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .burst-12 {
+                background: red;
+                width: 80px;
+                height: 80px;
+                position: relative;
+                text-align: center;
+            }
+            .burst-12:before,
+            .burst-12:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 80px;
+                width: 80px;
+                background: red;
+            }
+            .burst-12:before {
+                transform: rotate(30deg);
+            }
+            .burst-12:after {
+                transform: rotate(60deg);
+            }
+        </style>
+    </section>
+
+    <section id="heart" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>心形</summary>
+            <hgroup class="heart"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .heart {
+                position: relative;
+                width: 100px;
+                height: 90px;
+            }
+            .heart:before,
+            .heart:after {
+                position: absolute;
+                content: "";
+                left: 50px;
+                top: 0;
+                width: 50px;
+                height: 80px;
+                background: red;
+                border-radius: 50px 50px 0 0;
+                transform: rotate(-45deg);
+                transform-origin: 0 100%;
+            }
+            .heart:after {
+                left: 0;
+                transform: rotate(45deg);
+                transform-origin: 100% 100%;
+            }
+        </style>
+    </section>
+
+    <section id="infinity" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>无穷符号</summary>
+            <hgroup class="infinity"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .infinity {
+                position: relative;
+                width: 212px;
+                height: 100px;
+                box-sizing: content-box;
+            }
+            .infinity:before,
+            .infinity:after {
+                content: "";
+                box-sizing: content-box;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 60px;
+                border: 20px solid red;
+                border-radius: 50px 50px 0 50px;
+                transform: rotate(-45deg);
+            }
+            .infinity:after {
+                left: auto;
+                right: 0;
+                border-radius: 50px 50px 50px 0;
+                transform: rotate(45deg);
+            }
+        </style>
+    </section>
+
+    <section id="diamond" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>菱形</summary>
+            <hgroup class="diamond"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .diamond {
+                width: 0;
+                height: 0;
+                border: 50px solid transparent;
+                border-bottom-color: red;
+                position: relative;
+                top: -50px;
+            }
+            .diamond:after {
+                content: '';
+                position: absolute;
+                left: -50px;
+                top: 50px;
+                width: 0;
+                height: 0;
+                border: 50px solid transparent;
+                border-top-color: red;
+            }
+        </style>
+    </section>
+
+    <section id="diamond-shield" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>盾牌</summary>
+            <hgroup class="diamond-shield"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .diamond-shield {
+                width: 0;
+                height: 0;
+                border: 50px solid transparent;
+                border-bottom: 20px solid red;
+                position: relative;
+                top: -50px;
+            }
+            .diamond-shield:after {
+                content: '';
+                position: absolute;
+                left: -50px;
+                top: 20px;
+                width: 0;
+                height: 0;
+                border: 50px solid transparent;
+                border-top: 70px solid red;
+            }
+        </style>
+    </section>
+
+    <section id="cut-diamond" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>钻石</summary>
+            <hgroup class="cut-diamond"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .cut-diamond {
+                border-style: solid;
+                border-color: transparent transparent red transparent;
+                border-width: 0 25px 25px 25px;
+                height: 0;
+                width: 50px;
+                box-sizing: content-box;
+                position: relative;
+                margin: 20px 0 50px 0;
+            }
+            .cut-diamond:after {
+                content: "";
+                position: absolute;
+                top: 25px;
+                left: -25px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-color: red transparent transparent transparent;
+                border-width: 70px 50px 0 50px;
+            }
+        </style>
+    </section>
+
+    <section id="egg" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>鸡蛋</summary>
+            <hgroup class="egg"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .egg {
+                display: block;
+                width: 126px;
+                height: 180px;
+                background-color: red;
+                border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            }
+        </style>
+    </section>
+
+    <section id="pacman" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>吃豆小人</summary>
+            <hgroup class="pacman"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .pacman {
+                width: 0px;
+                height: 0px;
+                border-right: 60px solid transparent;
+                border-top: 60px solid red;
+                border-left: 60px solid red;
+                border-bottom: 60px solid red;
+                border-top-left-radius: 60px;
+                border-top-right-radius: 60px;
+                border-bottom-left-radius: 60px;
+                border-bottom-right-radius: 60px;
+            }
+        </style>
+    </section>
+
+    <section id="talkbubble" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>对话气泡</summary>
+            <hgroup class="talkbubble"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .talkbubble {
+                width: 120px;
+                height: 80px;
+                background: red;
+                position: relative;
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+            .talkbubble:before {
+                content: "";
+                position: absolute;
+                right: 100%;
+                top: 26px;
+                width: 0;
+                height: 0;
+                border-top: 13px solid transparent;
+                border-right: 26px solid red;
+                border-bottom: 13px solid transparent;
+            }
+        </style>
+    </section>
+
+    <section id="yin-yang" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>阴阳</summary>
+            <hgroup class="yin-yang"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .yin-yang {
+                width: 96px;
+                box-sizing: content-box;
+                height: 48px;
+                background: #eee;
+                border-color: red;
+                border-style: solid;
+                border-width: 2px 2px 50px 2px;
+                border-radius: 100%;
+                position: relative;
+            }
+            .yin-yang:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                background: #eee;
+                border: 18px solid red;
+                border-radius: 100%;
+                width: 12px;
+                height: 12px;
+                box-sizing: content-box;
+            }
+            .yin-yang:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                background: red;
+                border: 18px solid #eee;
+                border-radius: 100%;
+                width: 12px;
+                height: 12px;
+                box-sizing: content-box;
+            }
+        </style>
+    </section>
+
+    <section id="badge-ribbon" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>徽章缎带</summary>
+            <hgroup class="badge-ribbon"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .badge-ribbon {
+                position: relative;
+                background: red;
+                height: 100px;
+                width: 100px;
+                border-radius: 50px;
+            }
+            .badge-ribbon:before,
+            .badge-ribbon:after {
+                content: '';
+                position: absolute;
+                border-bottom: 70px solid red;
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                top: 70px;
+                left: -10px;
+                transform: rotate(-140deg);
+            }
+            .badge-ribbon:after {
+                left: auto;
+                right: -10px;
+                transform: rotate(140deg);
+            }
+        </style>
+    </section>
+
+    <section id="space-invader" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>太空侵略者</summary>
+            <hgroup class="space-invader"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .space-invader {
+                box-shadow: 0 0 0 1em red,
+                0 1em 0 1em red,
+                -2.5em 1.5em 0 .5em red,
+                2.5em 1.5em 0 .5em red,
+                -3em -3em 0 0 red,
+                3em -3em 0 0 red,
+                -2em -2em 0 0 red,
+                2em -2em 0 0 red,
+                -3em -1em 0 0 red,
+                -2em -1em 0 0 red,
+                2em -1em 0 0 red,
+                3em -1em 0 0 red,
+                -4em 0 0 0 red,
+                -3em 0 0 0 red,
+                3em 0 0 0 red,
+                4em 0 0 0 red,
+                -5em 1em 0 0 red,
+                -4em 1em 0 0 red,
+                4em 1em 0 0 red,
+                5em 1em 0 0 red,
+                -5em 2em 0 0 red,
+                5em 2em 0 0 red,
+                -5em 3em 0 0 red,
+                -3em 3em 0 0 red,
+                3em 3em 0 0 red,
+                5em 3em 0 0 red,
+                -2em 4em 0 0 red,
+                -1em 4em 0 0 red,
+                1em 4em 0 0 red,
+                2em 4em 0 0 red;
+                background: red;
+                width: 1em;
+                height: 1em;
+                overflow: hidden;
+                margin: 50px 0 70px 65px;
+            }
+        </style>
+    </section>
+
+    <section id="tv" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>电视屏幕</summary>
+            <hgroup class="tv"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .tv {
+                position: relative;
+                width: 200px;
+                height: 150px;
+                margin: 20px 0;
+                background: red;
+                border-radius: 50% / 10%;
+                color: white;
+                text-align: center;
+                text-indent: .1em;
+            }
+            .tv:before {
+                content: '';
+                position: absolute;
+                top: 10%;
+                bottom: 10%;
+                right: -5%;
+                left: -5%;
+                background: inherit;
+                border-radius: 5% / 50%;
+            }
+        </style>
+    </section>
+
+    <section id="chevron" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>臂章</summary>
+            <hgroup class="chevron"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .chevron {
+                position: relative;
+                text-align: center;
+                padding: 12px;
+                margin-bottom: 6px;
+                height: 60px;
+                width: 200px;
+            }
+            .chevron:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 51%;
+                background: red;
+                transform: skew(0deg, 6deg);
+            }
+            .chevron:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 50%;
+                background: red;
+                transform: skew(0deg, -6deg);
+            }
+        </style>
+    </section>
+
+    <section id="magnifying-glass" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>放大镜</summary>
+            <hgroup class="magnifying-glass"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .magnifying-glass {
+                font-size: 10em;
+                display: inline-block;
+                width: 0.4em;
+                box-sizing: content-box;
+                height: 0.4em;
+                border: 0.1em solid red;
+                position: relative;
+                border-radius: 0.35em;
+            }
+            .magnifying-glass:before {
+                content: "";
+                display: inline-block;
+                position: absolute;
+                right: -0.25em;
+                bottom: -0.1em;
+                border-width: 0;
+                background: red;
+                width: 0.35em;
+                height: 0.08em;
+                transform: rotate(45deg);
+            }
+        </style>
+    </section>
+
+    <section id="facebook-icon" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>Facebook标志</summary>
+            <hgroup class="facebook-icon"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .facebook-icon {
+                background: red;
+                text-indent: -999em;
+                width: 100px;
+                height: 110px;
+                box-sizing: content-box;
+                border-radius: 5px;
+                position: relative;
+                overflow: hidden;
+                border: 15px solid red;
+                border-bottom: 0;
+            }
+            .facebook-icon:before {
+                content: "/20";
+                position: absolute;
+                background: red;
+                width: 40px;
+                height: 90px;
+                bottom: -30px;
+                right: -37px;
+                border: 20px solid #eee;
+                border-radius: 25px;
+                box-sizing: content-box;
+            }
+            .facebook-icon:after {
+                content: "/20";
+                position: absolute;
+                width: 55px;
+                top: 50px;
+                height: 20px;
+                background: #eee;
+                right: 5px;
+                box-sizing: content-box;
+            }
+        </style>
+    </section>
+
+    <section id="moon" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>月亮</summary>
+            <hgroup class="moon"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            #moon {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                box-shadow: 15px 15px 0 0 red;
+            }
+        </style>
+    </section>
+
+
+    <section id="flag" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>旗帜</summary>
+            <hgroup class="flag"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .flag {
+                width: 110px;
+                height: 56px;
+                box-sizing: content-box;
+                padding-top: 15px;
+                position: relative;
+                background: red;
+                color: white;
+                font-size: 11px;
+                letter-spacing: 0.2em;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            .flag:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-bottom: 13px solid #eee;
+                border-left: 55px solid transparent;
+                border-right: 55px solid transparent;
+            }
+        </style>
+    </section>
+
+    <section id="cone" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>圆锥形</summary>
+            <hgroup class="cone"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .cone {
+                width: 0;
+                height: 0;
+                border-left: 70px solid transparent;
+                border-right: 70px solid transparent;
+                border-top: 100px solid red;
+                border-radius: 50%;
+            }
+        </style>
+    </section>
+
+    <section id="cross" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>十字</summary>
+            <hgroup class="cross"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .cross {
+                background: red;
+                height: 100px;
+                position: relative;
+                width: 20px;
+            }
+            .cross:after {
+                background: red;
+                content: "";
+                height: 20px;
+                left: -40px;
+                position: absolute;
+                top: 40px;
+                width: 100px;
+            }
+        </style>
+    </section>
+
+    <section id="base" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>地基</summary>
+            <hgroup class="base"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .base {
+                background: red;
+                display: inline-block;
+                height: 55px;
+                margin-left: 20px;
+                margin-top: 55px;
+                position: relative;
+                width: 100px;
+            }
+            .base:before {
+                border-bottom: 35px solid red;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+                content: "";
+                height: 0;
+                left: 0;
+                position: absolute;
+                top: -35px;
+                width: 0;
+            }
+        </style>
+    </section>
+
+    <section id="pointer" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>实心长箭头</summary>
+            <hgroup class="pointer"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .pointer {
+                width: 200px;
+                height: 40px;
+                position: relative;
+                background: red;
+            }
+            .pointer:after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-left: 20px solid white;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+            }
+            .pointer:before {
+                content: "";
+                position: absolute;
+                right: -20px;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-left: 20px solid red;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+            }
+        </style>
+    </section>
+
+    <section id="lock" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://css-tricks.com/the-shapes-of-css/" target="_blank" rel="noopener noreferrer">https://css-tricks.com/the-shapes-of-css/</a></summary>
+            <summary>锁</summary>
+            <hgroup class="lock"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .lock {
+                font-size: 8px;
+                position: relative;
+                width: 18em;
+                height: 13em;
+                border-radius: 2em;
+                top: 10em;
+                box-sizing: border-box;
+                border: 3.5em solid red;
+                border-right-width: 7.5em;
+                border-left-width: 7.5em;
+                margin: 0 0 6rem 0;
+            }
+            .lock:before {
+                content: "";
+                box-sizing: border-box;
+                position: absolute;
+                border: 2.5em solid red;
+                width: 14em;
+                height: 12em;
+                left: 50%;
+                margin-left: -7em;
+                top: -12em;
+                border-top-left-radius: 7em;
+                border-top-right-radius: 7em;
+            }
+            .lock:after {
+                content: "";
+                box-sizing: border-box;
+                position: absolute;
+                border: 1em solid red;
+                width: 5em;
+                height: 8em;
+                border-radius: 2.5em;
+                left: 50%;
+                top: -1em;
+                margin-left: -2.5em;
+            }
+        </style>
+    </section>
+
+    <section id="stop" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>停止按钮</summary>
+            <hgroup class="stop"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .stop{
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 100%;
+                outline: 10px solid black;
+                outline-offset: -27px;
+                cursor: pointer;
+            }
+        </style>
+    </section>
+
+    <section id="plus" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>加号</summary>
+            <hgroup class="plus"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .plus{
+                width: 50px;
+                height: 50px;
+                background-color: white;
+                border: 1px solid black;
+                border-radius: 100%;
+                outline: 10px solid black;
+                outline-offset: -35px;
+                cursor: pointer;
+            }
+        </style>
+    </section>
+
+    <section id="btn-close" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>关闭按钮</summary>
+            <hgroup class="btn-close"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .btn-close{
+                width: 50px;
+                height: 50px;
+                background-color: black;
+                border: 1px solid white;
+                border-radius: 100%;
+                outline: 15px solid white;
+                outline-offset: -39px;
+                cursor: pointer;
+                transform: rotate(45deg);
+            }
+        </style>
+    </section>
+
+    <section id="btn-menu" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>菜单按钮</summary>
+            <hgroup class="btn-menu"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .btn-menu{
+                width: 30px;
+                height: 0;
+                color: black;
+                box-shadow: 20px 10px 0 3px ,20px 0 0 3px ,20px 20px 0 3px;
+            }
+        </style>
+    </section>
+
+    <section id="icon-article" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>文章图标</summary>
+            <hgroup class="icon-article"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .icon-article{
+                width: 30px;
+                height: 15px;
+                background: linear-gradient(to bottom,black 0%,black 0%,transparent 20%,transparent 40%, black 40%,black 40%,transparent 60%,transparent 80%,black 100%);
+                outline: 1px solid black;
+                outline-offset: 4px;
+            }
+        </style>
+    </section>
+
+    <section id="radio" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>单选按钮</summary>
+            <hgroup class="radio"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .radio{
+                width: 16px;
+                height: 16px;
+                background-color: black;
+                border-radius: 100%;
+                box-shadow: 0 0 0 5px #fff,0 0 0 10px #000;
+            }
+        </style>
+    </section>
+
+    <section id="target" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>靶子</summary>
+            <hgroup class="target"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .target{
+                width: 16px;
+                height: 16px;
+                background-color: black;
+                border-radius: 100%;
+                box-shadow: 0 0 0 3px #fff,0 0 0 5px #000;
+                outline: 18px solid #ffffff;
+                outline-offset: -25px;
+                transform: scale(1.5);
+            }
+        </style>
+    </section>
+
+    <section id="dot-tian" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>田字点阵</summary>
+            <hgroup class="dot-tian"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .dot-tian{
+                width:0;
+                color: #000;
+                border: 3px solid black;
+                outline: 6px dotted ;
+                outline-offset: 6px;
+            }
+        </style>
+    </section>
+
+    <section id="download" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>下载</summary>
+            <hgroup class="download"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .download{
+                width: 0;
+                color: #000;
+                border: 8px solid transparent;
+                border-top: 8px solid;
+                box-shadow: 0 -12px 0 -4px;
+            }
+        </style>
+    </section>
+
+    <section id="download-underline" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>下载（带横线）</summary>
+            <hgroup class="download-underline"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .download-underline{
+                width: 1px;
+                height: 6px;
+                color: #000;
+                border: 8px solid transparent;
+                border-top: 8px solid;
+                box-shadow: 0 -12px 0 -4px;
+                background: linear-gradient(to bottom,#ffffff 50%,#000000 50%) repeat-x;
+            }
+        </style>
+    </section>
+
+    <section id="not-allowed" class="code-wrap cf">
+        <div class="css-live-wrap">
+            <summary>来自：<a class="link" href="https://blog.csdn.net/liu_jiachen/article/details/78634457" target="_blank" rel="noopener noreferrer">https://blog.csdn.net/liu_jiachen/article/details/78634457</a></summary>
+            <summary>禁用</summary>
+            <hgroup class="not-allowed"></hgroup>
+        </div>
+        <style class="code" contenteditable=true>
+            .not-allowed{
+                width: 20px;
+                height: 20px;
+                border-radius: 100%;
+                border: 2px solid #000000;
+                background: linear-gradient(to right,#ffffff 45%,#000000 45%,#000 55%,#fff 55%);
+                transform:rotate(40deg);
+            }
+        </style>
+    </section>
+
+</div>
+</body>
+</html>
+

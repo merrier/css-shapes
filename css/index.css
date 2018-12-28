@@ -118,9 +118,9 @@ summary:hover{
     white-space: pre;
 }
 
-.css-live-wrap hgroup {
+.hgroup {
     position: absolute;
-    top:50%;
+    top: 66%;
     left: 50%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
